@@ -1,5 +1,6 @@
 import os
 from flask import Flask, request, abort, jsonify
+from flask_migrate import Migrate
 from sqlalchemy import exc
 import json
 from flask_sqlalchemy import SQLAlchemy
