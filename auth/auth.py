@@ -10,7 +10,9 @@ from urllib.request import urlopen
 AuthError Exception
 A standardized way to communicate auth failure modes
 '''
-
+AUTH0_DOMAIN = auth0_config['AUTH0_DOMAIN']
+ALGORITHMS = auth0_config['ALGORITHMS']
+API_AUDIENCE = auth0_config['API_AUDIENCE']
 
 class AuthError(Exception):
     def __init__(self, error, status_code):
